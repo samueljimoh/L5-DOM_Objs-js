@@ -14,8 +14,13 @@
 (function (){
     "use strict";
 
-    console.log(document);
-    console.log(window);
-    console.log(screen);
+    switch(document.title) {
+        case "Home":
+        console.log("You are at home");
+        break;
+        case "About Me":
+        console.log("You are at the about me page");
+        break;
+    }
 
 })();
